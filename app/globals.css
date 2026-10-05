@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+:root{--burgundy:#790D16;--beige:#E5D3AF;--cream:#F5EFE1;--soft-blue:#AEC4D4;--ink:#171717}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);overflow-x:hidden}
+:focus-visible{outline:3px solid var(--burgundy);outline-offset:3px}
+@layer components{.btn{@apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border-[1.5px] border-burgundy bg-burgundy px-7 text-sm font-bold text-white transition hover:-translate-y-0.5 active:scale-95}
+.btn-ghost{@apply bg-transparent text-burgundy hover:bg-burgundy hover:text-white}
+.input{@apply min-h-[48px] w-full rounded-xl border-[1.5px] border-burgundy/30 bg-white px-4 py-2 outline-none transition focus:border-burgundy focus:ring-4 focus:ring-burgundy/15}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}}
